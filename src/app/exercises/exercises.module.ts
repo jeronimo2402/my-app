@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { ExercisesRoutingModule } from './exercises-routing.module';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { SustentationComponent } from './sustentation/sustentation.component';
 
 
 @NgModule({
   declarations: [
-    CalculatorComponent
+    CalculatorComponent,
+    SustentationComponent
   ],
   imports: [
     CommonModule,

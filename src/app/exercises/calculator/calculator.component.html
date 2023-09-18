@@ -1,1 +1,139 @@
-<p>calculator works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <div class="container text-center">
+
+    <div class="row" style="margin-bottom: 30px;">
+      <div class="col" style="margin-top: 20px;">
+        <h1>Calculator</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col align-self-center" style="background-color: rgb(161, 157, 151); border-radius: 4mm; margin: 5px; border-style:ridge; border-color: black; border-width: 10px; height: 80px;">
+        <h1><p>{{oper}}</p></h1>
+      </div>
+    </div>
+
+    <div class="row justify-content-around" style="margin-top: 20px;">
+      <div class="col-md-6" style="background-color: cadetblue;margin-bottom: 20px; border-radius: 4mm;">
+        <div class="row" style="margin: 5px;margin-top: 10px;">
+        <div class="col-4">
+          <button class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('7')">
+            <h1>7</h1>
+          </button>
+        </div>
+          <div class="col-4">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('8')">
+              <h1>8</h1>
+            </button>
+          </div>
+          <div class="col-4">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('9')">
+              <h1>9</h1>
+            </button>
+          </div>
+        </div>
+
+        <div class="row" style="margin: 5px;margin-top: 10px;">
+          <div class="col-4">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('4')">
+              <h1>4</h1>
+            </button>
+          </div>
+          <div class="col-4">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('5')">
+              <h1>5</h1>
+            </button>
+          </div>
+          <div class="col-4">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('6')">
+              <h1>6</h1>
+            </button>
+          </div>
+        </div>
+
+        <div class="row" style="margin: 5px; margin-top: 10px;">
+          <div class="col-4">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('1')">
+              <h1>1</h1>
+            </button>
+          </div>
+          <div class="col-4">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('2')">
+              <h1>2</h1>
+            </button>
+          </div>
+          <div class="col-4">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('3')">
+              <h1>3</h1>
+            </button>
+          </div>
+        </div>
+
+        <div class="row justify-content-between" style="margin: 10px;">
+          <div class="col">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('0')">
+              <h1>0</h1>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="background-color: cadetblue;margin-bottom: 20px; border-radius: 4mm;">
+        <div class="row" style="margin: 1px;margin-top: 60px;">
+          <div class="col-6">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('x')">
+              <h1>x</h1>
+            </button>
+          </div>
+          <div class="col-6">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('÷')">
+              <h1>÷</h1>
+            </button>
+          </div>
+        </div>
+        <div class="row" style="margin: 1px; margin-top: 10px;">
+          <div class="col-6">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('+')">
+              <h1>+</h1>
+            </button>
+          </div>
+          <div class="col-6">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="write('-')">
+              <h1>-</h1>
+            </button>
+          </div>
+        </div>
+
+        <div class="row" style="margin: 1px; margin-bottom: 60px; margin-top: 10px;">
+          <div class="col-6">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="deleteAll()">
+              <h1>CE</h1>
+            </button>
+          </div>
+          <div class="col-6">
+            <button type="button" class="btn btn-secondary" style="width: 100px; height: 100px;" (click)="operation()">
+              <h1>=</h1>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div  class="row justify-content-md-end">
+      <div class="col-3">
+        <nav>
+          <button class="btn btn-secondary" style="margin-bottom: 1em; margin-right: 1em;" (click)="navegar()">
+            <h1>Sutentation</h1>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

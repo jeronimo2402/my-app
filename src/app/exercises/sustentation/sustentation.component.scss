@@ -1,0 +1,39 @@
+.principal{
+    font-size: 9vh;
+}
+.secundario{
+    font-size: 9vh;
+}
+.principal2{
+    font-size: 9vh;
+}
+
+@media (min-width: 960px){
+    .principal {
+        font-size: 18vh;
+    }
+    .principal2{
+        font-size: 12vh;
+    }
+
+}
+@media (min-width: 1160px){
+    .principal2{
+        font-size: 16vh;
+    }
+
+}
+
+@media (max-width: 768px){
+    .principal {
+        font-size: 50vh;
+    }
+    .principal2{
+        font-size: 40vh;
+    }
+}
+@media (max-width: 420px){
+    .principal2{
+        font-size: 25vh;
+    }
+}
