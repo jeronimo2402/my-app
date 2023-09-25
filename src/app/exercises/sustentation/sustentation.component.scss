@@ -1,39 +1,28 @@
 .principal{
-    font-size: 9vh;
+    font-size: 9vw;
 }
 .secundario{
-    font-size: 9vh;
+    font-size: 9vw;
 }
 .principal2{
-    font-size: 9vh;
+    font-size: 9vw;
 }
 
 @media (min-width: 960px){
     .principal {
-        font-size: 18vh;
+        font-size: 18vw;
     }
     .principal2{
-        font-size: 12vh;
-    }
-
-}
-@media (min-width: 1160px){
-    .principal2{
-        font-size: 16vh;
+        font-size: 16vw;
     }
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     .principal {
-        font-size: 50vh;
+        font-size: 50vw;
     }
     .principal2{
-        font-size: 40vh;
-    }
-}
-@media (max-width: 420px){
-    .principal2{
-        font-size: 25vh;
+        font-size: 40vw;
     }
 }
