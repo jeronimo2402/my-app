@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {Parser} from 'expr-eval';
 import Swal from 'sweetalert2';
 import {Router} from '@angular/router'
+import { evaluateExpression } from './safe-expression';
 
 @Component({
   selector: 'app-calculator',
@@ -31,10 +31,8 @@ export class CalculatorComponent {
   }
   operation(){
     let exp=this.oper;
-    var parser = new Parser();
     try{
-      var expr= parser.parse(exp);
-      this.oper=expr.evaluate({});
+      this.oper=String(evaluateExpression(exp));
       this.done=1
     }catch(e){
       Swal.fire({
