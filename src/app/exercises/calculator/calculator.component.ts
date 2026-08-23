@@ -4,9 +4,10 @@ import {Router} from '@angular/router'
 import { evaluateExpression } from './safe-expression';
 
 @Component({
-  selector: 'app-calculator',
-  templateUrl: './calculator.component.html',
-  styleUrls: ['./calculator.component.scss']
+    selector: 'app-calculator',
+    templateUrl: './calculator.component.html',
+    styleUrls: ['./calculator.component.scss'],
+    standalone: false
 })
 export class CalculatorComponent {
   oper = '';

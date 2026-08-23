@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-sustentation',
-  templateUrl: './sustentation.component.html',
-  styleUrls: ['./sustentation.component.scss']
+    selector: 'app-sustentation',
+    templateUrl: './sustentation.component.html',
+    styleUrls: ['./sustentation.component.scss'],
+    standalone: false
 })
 export class SustentationComponent {
 
