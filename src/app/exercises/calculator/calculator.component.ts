@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import Swal from 'sweetalert2';
 import {Router} from '@angular/router'
 import { evaluateExpression } from './safe-expression';
@@ -7,6 +7,7 @@ import { evaluateExpression } from './safe-expression';
     selector: 'app-calculator',
     templateUrl: './calculator.component.html',
     styleUrls: ['./calculator.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class CalculatorComponent {
